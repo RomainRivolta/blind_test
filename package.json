@@ -1,0 +1,23 @@
+{
+  "name": "blind_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RomainRivolta/blind_test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RomainRivolta/blind_test/issues"
+  },
+  "homepage": "https://github.com/RomainRivolta/blind_test#readme",
+  "dependencies": {
+    "esm": "^3.0.74",
+    "jovo-framework": "^1.4.2"
+  }
+}

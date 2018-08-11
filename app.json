@@ -1,0 +1,8 @@
+{
+	"googleAction": {
+		"nlu": {
+			"name": "dialogflow"
+		}
+	},
+	"endpoint": "https://webhook.jovo.cloud/50952686-8c00-44f9-8df8-56b33e080003"
+}

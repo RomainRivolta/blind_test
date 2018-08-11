@@ -1,0 +1,26 @@
+[
+	{
+		"userId": "ABwppHE-Iygv0f2DFlMN_yU79GuaUgjZ6zLH2ZSPnzkbjuvz7olC8hR930qWyFYJy_D_xh2g1zz6NZAHtMA2yg",
+		"userData": {
+			"data": {},
+			"metaData": {
+				"createdAt": "2018-08-11T16:08:46.021Z",
+				"lastUsedAt": "2018-08-11T16:11:57.027Z",
+				"sessionsCount": 2
+			},
+			"context": {
+				"prev": [
+					{
+						"request": {
+							"intent": "LAUNCH",
+							"timestamp": "2018-08-11T16:11:57.028Z"
+						},
+						"response": {
+							"speech": "ok"
+						}
+					}
+				]
+			}
+		}
+	}
+]
