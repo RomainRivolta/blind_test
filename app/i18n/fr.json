@@ -1,0 +1,19 @@
+{
+    "translation": {
+      "NEW_GAME_MESSAGE": "Bienvenue sur {{gameName}}.",
+      "WELCOME": "Etes-vous prêt a jouer ?",
+      "EXIT": "Merci et a bientôt !",
+      "REPROMPT": "Pouvez-vous répondre s'il vous plait ?",
+      "START":{
+          "UNHANDLED": "Vous devez répondre par oui ou par non",
+          "Q_CONFIG": "Super ! Voulez-vous jouer en équipe ou tout seul ? "
+      },
+      "CONFIG_GAME": {
+        "UNHANDLED": "Vous devez répondre par seul ou en équipe",
+          "CONFIG_GAME_TEAM": {
+            "NUMBER_TEAM": "Combien d'équipe y a t-il ?",
+            "UNHANDLED": "Vous devez répondre par un nombre"
+          }
+      }
+    }
+  }

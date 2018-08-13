@@ -1,25 +1,87 @@
-{  
-    "invocation": "my test app",
-    "intents":[  
-    ],
-    "dialogflow": {
-        "intents": [
-            {
-                "name": "Default Fallback Intent",
-                "auto": true,
-                "webhookUsed": true,
-                "fallbackIntent": true
-            },
-            {
-                "name": "Default Welcome Intent",
-                "auto": true,
-                "webhookUsed": true,
-                "events": [
-                    {
-                        "name": "WELCOME"
+{
+	"invocation": "",
+	"intents": [
+		{
+			"name": "AnswerConfigIntent",
+			"phrases": [
+				"{answerConfig}"
+			],
+			"inputs": [
+				{
+					"name": "answerConfig",
+					"type": {
+                        "dialogflow": "answerConfig"
+                    },
+                    "dialogflow": {
+                        "isList": true
                     }
-                ]
-            }
-        ]
-    }
+                }
+			]
+		},
+		{
+			"name": "NoIntent",
+			"phrases": [
+				"non"
+			]
+		},
+		{
+			"name": "YesIntent",
+			"phrases": [
+				"oui",
+				"bien sûr",
+				"ouai"
+			]
+        },
+        {
+			"name": "AnswersNumberTeamIntent",
+			"phrases": [
+				"{numberTeam}"
+            ],
+            "inputs": [
+                {
+                    "name": "numberTeam",
+                    "type": {
+                        "dialogflow": "@sys.number"
+                    }
+                }
+            ]
+		}
+	],
+	"inputTypes": [
+		{
+			"name": "answerConfig",
+			"values": [
+				{
+					"value": "seul",
+					"synonyms": [
+						"tout seul"
+					]
+				},
+				{
+					"value": "équipe",
+					"synonyms": [
+						"en équipe"
+					]
+				}
+			]
+		}
+	],
+	"dialogflow": {
+		"intents": [
+			{
+				"webhookUsed": true,
+				"fallbackIntent": true,
+				"name": "Default Fallback Intent"
+			},
+			{
+				"webhookUsed": true,
+				"events": [
+					{
+						"name": "WELCOME"
+					}
+				],
+				"name": "Default Welcome Intent"
+			}
+		]
+	}
 }
