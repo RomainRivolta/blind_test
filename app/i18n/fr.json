@@ -12,7 +12,9 @@
         "UNHANDLED": "Vous devez répondre par seul ou en équipe",
           "CONFIG_GAME_TEAM": {
             "NUMBER_TEAM": "Combien d'équipe y a t-il ?",
-            "UNHANDLED": "Vous devez répondre par un nombre"
+            "NAME_TEAM": "Quelle est le nom de l' équipe numéro {{numberTeam}} ?",
+            "UNHANDLED": "Vous devez répondre par un nombre",
+            "ERROR_NUMBER_TEAM": "Le nombre d'équipe doit être superieur à 1"
           }
       }
     }

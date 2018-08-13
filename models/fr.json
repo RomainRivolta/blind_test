@@ -45,6 +45,20 @@
                     }
                 }
             ]
+		},
+        {
+			"name": "AnswerNameTeamIntent",
+			"phrases": [
+				"{nameTeam}"
+            ],
+            "inputs": [
+                {
+                    "name": "nameTeam",
+                    "type": {
+                        "dialogflow": "@sys.any"
+                    }
+                }
+            ]
 		}
 	],
 	"inputTypes": [

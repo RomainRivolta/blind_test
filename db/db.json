@@ -5,20 +5,34 @@
 			"data": {},
 			"metaData": {
 				"createdAt": "2018-08-11T16:08:46.021Z",
-				"lastUsedAt": "2018-08-11T20:52:55.250Z",
-				"sessionsCount": 33
+				"lastUsedAt": "2018-08-13T13:40:30.189Z",
+				"sessionsCount": 87
 			},
 			"context": {
 				"prev": [
 					{
 						"request": {
-							"intent": "Default Fallback Intent",
-							"timestamp": "2018-08-11T20:52:55.250Z",
-							"state": "ConfigState.ConfigTeamState.AnswersTeamIntent"
+							"intent": "LAUNCH",
+							"timestamp": "2018-08-13T13:40:30.189Z"
 						},
 						"response": {
-							"speech": "Vous devez répondre par seul ou en équipe",
-							"state": "ConfigState.ConfigTeamState.AnswersTeamIntent"
+							"speech": "Bienvenue sur blind_test. Etes-vous prêt a jouer ?",
+							"state": "StartState"
+						}
+					}
+				]
+			}
+		}
+	}
+]ti",
+									"value": "titi",
+									"id": "titi"
+								}
+							}
+						},
+						"response": {
+							"speech": "Quelle est le nom de l' équipe numéro 3 ?",
+							"state": "ConfigTeamNameState.AnswerNameTeamIntent"
 						}
 					}
 				]
