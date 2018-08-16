@@ -1,9 +1,10 @@
 {
     "translation": {
       "NEW_GAME_MESSAGE": "Bienvenue sur {{gameName}}.",
-      "WELCOME": "Etes-vous prêt a jouer ?",
+      "WELCOME": "Etes-vous prêt a jouer ou dois répéter les règles du jeu ?",
       "EXIT": "Merci et a bientôt !",
       "REPROMPT": "Pouvez-vous répondre s'il vous plait ?",
+      "EXPLICATION": "Ce jeu se déroule en 5 manches avec des thèmes musicaux different ",
       "START":{
           "UNHANDLED": "Vous devez répondre par oui ou par non",
           "Q_CONFIG": "Super ! Voulez-vous jouer en équipe ou tout seul ? "
@@ -12,7 +13,8 @@
         "UNHANDLED": "Vous devez répondre par seul ou en équipe",
           "CONFIG_GAME_TEAM": {
             "NUMBER_TEAM": "Combien d'équipe y a t-il ?",
-            "NAME_TEAM": "Quelle est le nom de l' équipe numéro {{numberTeam}} ?",
+            "CRY_TEAM": "Dites moi le mot clé simple que l'équipe numéro {{numberTeam}} a t-elle choisie pour répondre ?",
+            "NAME_TEAM": "Quelle est le nom de l'équipe numéro {{numberTeam}} ?",
             "UNHANDLED": "Vous devez répondre par un nombre",
             "ERROR_NUMBER_TEAM": "Le nombre d'équipe doit être superieur à 1"
           }
