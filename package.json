@@ -18,8 +18,12 @@
   },
   "homepage": "https://github.com/RomainRivolta/blind_test#readme",
   "dependencies": {
+    "dotenv": "^6.0.0",
     "esm": "^3.0.74",
-    "jovo-framework": "^1.4.2"
+    "jovo-framework": "^1.4.2",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2",
+    "uuid": "^3.3.2"
   },
   "devDependencies": {
     "cross-env": "^5.2.0"

@@ -5,7 +5,7 @@ export default {
     'ConfigState':{
         'AnswerConfigIntent':function(answerConfig){ 
             if(answerConfig.value === 'seul' || answerConfig.value === 'only'){
-                this.toIntent('seul')
+                this.toStateIntent('GameState','GameIntent')
             } else {
                 this.followUpState('ConfigTeamNumberState.AnswersNumberTeamIntent')
                     .ask(this.t('CONFIG_GAME.CONFIG_GAME_TEAM.NUMBER_TEAM'))
@@ -58,7 +58,7 @@ export default {
             if(remainingTeam <= numberTeam){
                 this.followUpState('ConfigTeamWordState').ask(this.t('CONFIG_GAME.CONFIG_GAME_TEAM.CRY_TEAM',remainingTeam))
             } else {
-                this.tell("ok")
+                this.toStateIntent('GameState','GameIntent')
             }
         },
     },
