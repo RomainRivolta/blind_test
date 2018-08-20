@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "cross-env NODE_ENV=development node -r esm app/deezer/genre.js",
     "dev": "cross-env NODE_ENV=development node -r esm index.js --webhook"
   },
   "repository": {

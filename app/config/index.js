@@ -13,3 +13,7 @@ let configObj = config._default
 if(config[env]){
     configObj = _.merge(configObj,config[env])
 }
+
+export default {
+    configObj
+}
