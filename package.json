@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cross-env NODE_ENV=development node -r esm app/deezer/genre.js",
+    "test": "cross-env NODE_ENV=development node -r esm request/deezer/genres.js",
     "dev": "cross-env NODE_ENV=development node -r esm index.js --webhook"
   },
   "repository": {

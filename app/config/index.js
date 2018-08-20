@@ -15,5 +15,5 @@ if(config[env]){
 }
 
 export default {
-    configObj
+    ...configObj
 }
