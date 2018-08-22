@@ -6,26 +6,19 @@ import config from '../../app/config'
 import api from './api'
 import uuidv1 from 'uuid/v1'
 
-const getAllGenres = () => {
+const getAllArtist = () => {
     const session = uuidv1()
-    api.apiDeezer('https://api.deezer.com/genre',session).then((result) => {
+    api.apiDeezer(`https://api.deezer.com/genre/${id_genre}/artists`,session).then((result) => {
         var genre = result.data.map(element => {
             let obj = {}
             obj = {
                 id: element.id,
-                name: element.name
+                name: element.name,
+                tracklist: element.tracklist
             }
             return obj
-        })
-                            
-        fs.appendFile(path.join(__dirname,'../../app/deezer/genre.json'),
-        JSON.stringify(genre,null,'\t'),
-        {
-            flag:'w+'
-        },(err) => {
-            if(err) throw err
         })
     })
 }
 
-getAllGenresGenres()
+getAllArtist()

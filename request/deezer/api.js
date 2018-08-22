@@ -1,31 +1,16 @@
 import request from 'request-promise'
 import errors from 'request-promise/errors'
-import uuidv1 from 'uuid/v1'
 import fs from 'fs'
 import path from 'path'
-import config from '../config'
+import config from '../../app/config'
 
-const certFile = path.resolve(__dirname, '../../ssl/GE_External_Root_CA_2_1.pem')
-
-let ca,proxy 
-
-if(true){
-    ca = fs.readFileSync(certFile)
-    proxy= 'http://PITC-Zscaler-EMEA-London3PR.proxy.corporate.ge.com:80'
-}
-
-
-const getGenres = () => {
-    const url = 'https://api.deezer.com/genre'
-    const session = uuidv1()
+const apiDeezer = (url,session) => {
     let options = {
         uri: url,
         method: 'GET',
         headers: {
             'content-type': 'application/json',
         },
-        proxy,
-        ca,
         simple: false,
         body:{
             session
@@ -33,7 +18,15 @@ const getGenres = () => {
         json:true,
     }
 
-    request(options).then((response) => {
+    if(config.dev_ge == 1){
+        const certFile =  'C:\\Users\\100045430\\Documents\\GE\\ssl\\GE_External_Root_CA_2_1.pem'
+        options = Object.assign({},options,{
+            ca: fs.readFileSync(certFile),
+            proxy: 'http://PITC-Zscaler-EMEA-London3PR.proxy.corporate.ge.com:80'
+        })
+    }
+    return request(options).then((response) => {
+    
         if(response.error){
             let code = response.error.code
             let errorType = response.error.type
@@ -80,10 +73,13 @@ const getGenres = () => {
                     break;
             }
         } else {
-            console.log(response)
+            return response
         }
     }).catch((errors) => {
         console.error(errors)
     })
 }
-getGenres()
+
+export default {
+    apiDeezer
+}
