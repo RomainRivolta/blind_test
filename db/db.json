@@ -5,28 +5,28 @@
 			"data": {},
 			"metaData": {
 				"createdAt": "2018-08-11T16:08:46.021Z",
-				"lastUsedAt": "2018-08-13T17:15:41.745Z",
-				"sessionsCount": 26
+				"lastUsedAt": "2018-08-22T16:02:59.875Z",
+				"sessionsCount": 31
 			},
 			"context": {
 				"prev": [
 					{
 						"request": {
-							"intent": "AnswerNameTeamIntent",
-							"timestamp": "2018-08-13T17:15:41.745Z",
-							"state": "ConfigTeamNameState.AnswerNameTeamIntent",
+							"intent": "AnswerConfigIntent",
+							"timestamp": "2018-08-22T16:02:59.875Z",
+							"state": "ConfigState",
 							"inputs": {
-								"nameTeam": {
-									"name": "nameTeam",
-									"key": "fdsf",
-									"value": "fdsf",
-									"id": "fdsf"
+								"answerConfig": {
+									"name": "answerConfig",
+									"key": "seul",
+									"value": "seul",
+									"id": "seul"
 								}
 							}
 						},
 						"response": {
 							"speech": "ok",
-							"state": "ConfigTeamNameState.AnswerNameTeamIntent"
+							"state": "GameState"
 						}
 					}
 				]

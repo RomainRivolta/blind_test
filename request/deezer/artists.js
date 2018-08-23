@@ -6,7 +6,7 @@ import config from '../../app/config'
 import api from './api'
 import uuidv1 from 'uuid/v1'
 
-const getAllArtist = () => {
+const getArtistByIdGenre = () => {
     const session = uuidv1()
     api.apiDeezer(`https://api.deezer.com/genre/${id_genre}/artists`,session).then((result) => {
         var genre = result.data.map(element => {
@@ -21,4 +21,6 @@ const getAllArtist = () => {
     })
 }
 
-getAllArtist()
+export default {
+    getArtistByIdGenre
+}
